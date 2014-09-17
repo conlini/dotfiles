@@ -72,4 +72,5 @@ set nowritebackup
 set noswapfile
 " End basic settings
 
-
+"pathogen
+execute pathogen#infect()  
