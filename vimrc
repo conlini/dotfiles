@@ -80,3 +80,9 @@ let g:ctrlp_map = '<leader>t'
 set wildignore+=*/build/**
 " " disable caching
 let g:ctrlp_use_caching=0
+
+"set color theme solarized
+set background=dark
+let g:solarized_termcolors = 256  " New line!!
+colorscheme solarized
+
