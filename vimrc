@@ -2,10 +2,21 @@
 " Begin basic settins
 
 autocmd! bufwritepost .vimrc source %
+"pathogen
+execute pathogen#infect()  
+
 filetype off
 filetype plugin indent on
 syntax on
 filetype plugin on
+
+"autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
+
+set omnifunc=syntaxcomplete#Complete
+set completeopt=longest,menuone
+
+inoremap <c-space> <C-x><C-o>
+inoremap <c-@> <C-x><C-o>
 
 set nocompatible
 set backspace=eol,indent,start
@@ -50,10 +61,10 @@ set autoindent
 set smartindent
 set shiftwidth=4
 "set bs=2
-set tw=80
+set tw=100
 set nowrap "dont wrap on load
-set fo-=t "dont wrap text when typing
-set colorcolumn=81
+"set fo-=t "dont wrap text when typing
+set colorcolumn=100
 highlight ColorColumn ctermbg=233
 
 
@@ -70,8 +81,7 @@ set nowritebackup
 set noswapfile
 " End basic settings
 
-"pathogen
-execute pathogen#infect()  
+
 
 let delimitMate_expand_cr = 1 "DelimitMate settings
 " Use <leader>t to open ctrlp
@@ -84,5 +94,18 @@ let g:ctrlp_use_caching=0
 "set color theme solarized
 set background=dark
 let g:solarized_termcolors = 256  " New line!!
-colorscheme solarized
+colorscheme desert
 
+"powerline
+"python from powerline.vim import setup as powerline_setup
+"python powerline_setup()
+"python del powerline_setup
+"
+
+"java settings
+autocmd FileType java set completeopt-=preview
+autocmd Filetype java setlocal completefunc=javacomplete#CompleteParamsInfo
+autocmd Filetype java setlocal omnifunc=javacomplete#Complete
+
+call javacomplete#SetSourcePath('$HOME/dev/src/*')
+call javacomplete#SetClassPath('$HOME/.m2/repository/*')
