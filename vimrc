@@ -126,6 +126,6 @@ set laststatus=2
 set  nofoldenable
 
 " pymode settings
-map <Leader>g :call RopeGotoDefintion()<CR>
 let g:pymode_rope_lookup_project = 1
-let g:pymode_rope_goto_def_cmd = 'vnew'
+let g:pymode_rope_goto_definition_cmd = 'vnew'
+let g:pymode_rope_goto_definition_bind = '<c-j>'
