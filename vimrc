@@ -4,6 +4,7 @@
 autocmd! bufwritepost .vimrc source %
 "pathogen
 execute pathogen#infect()  
+execute pathogen#helptags()
 
 filetype off
 filetype plugin indent on
@@ -61,10 +62,10 @@ set autoindent
 set smartindent
 set shiftwidth=4
 "set bs=2
-set tw=100
+set tw=79
 set nowrap "dont wrap on load
 "set fo-=t "dont wrap text when typing
-set colorcolumn=100
+set colorcolumn=79
 highlight ColorColumn ctermbg=233
 
 
@@ -86,6 +87,8 @@ set noswapfile
 let delimitMate_expand_cr = 1 "DelimitMate settings
 " Use <leader>t to open ctrlp
 let g:ctrlp_map = '<leader>t'
+let g:ctrlp_regexp = 1 "enable regex search
+let g:ctrlp_open_new_file = 't'
 " " Ignore these directories
 set wildignore+=*/build/**
 " " disable caching
@@ -112,12 +115,17 @@ set termencoding=utf-8
 set laststatus=2
 
 "java settings
-autocmd FileType java set completeopt-=preview
-autocmd Filetype java setlocal completefunc=javacomplete#CompleteParamsInfo
-autocmd Filetype java setlocal omnifunc=javacomplete#Complete
+" autocmd FileType java set completeopt-=preview
+" autocmd Filetype java setlocal completefunc=javacomplete#CompleteParamsInfo
+" autocmd Filetype java setlocal omnifunc=javacomplete#Complete
 
-call javacomplete#SetSourcePath('$HOME/dev/src/*')
-call javacomplete#SetClassPath('$HOME/.m2/repository/*')
+" call javacomplete#SetSourcePath('$HOME/dev/src/*')
+" call javacomplete#SetClassPath('$HOME/.m2/repository/*')
 
-set foldmethod=syntax
-set foldenable
+" set foldmethod=syntax
+set  nofoldenable
+
+" pymode settings
+map <Leader>g :call RopeGotoDefintion()<CR>
+let g:pymode_rope_lookup_project = 1
+let g:pymode_rope_goto_def_cmd = 'vnew'
