@@ -1,5 +1,3 @@
-" My vimrc
-" Begin basic settins
 
 autocmd! bufwritepost .vimrc source %
 "pathogen
@@ -99,28 +97,6 @@ set background=dark
 let g:solarized_termcolors = 256  " New line!!
 colorscheme desert
 
-"powerline
-python from powerline.vim import setup as powerline_setup
-python powerline_setup()
-python del powerline_setup
-set rtp+=/usr/local/lib/python2.7/site-packages/powerline/bindings/vim
-
-set guifont=Inconsolata\ for\ Powerline:h15
-let g:Powerline_symbols = 'fancy'
-set encoding=utf-8
-set t_Co=256
-set fillchars+=stl:\ ,stlnc:\
-set term=xterm-256color
-set termencoding=utf-8
-set laststatus=2
-
-"java settings
-" autocmd FileType java set completeopt-=preview
-" autocmd Filetype java setlocal completefunc=javacomplete#CompleteParamsInfo
-" autocmd Filetype java setlocal omnifunc=javacomplete#Complete
-
-" call javacomplete#SetSourcePath('$HOME/dev/src/*')
-" call javacomplete#SetClassPath('$HOME/.m2/repository/*')
 
 " set foldmethod=syntax
 set  nofoldenable
