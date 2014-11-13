@@ -104,4 +104,4 @@ set  nofoldenable
 " pymode settings
 let g:pymode_rope_lookup_project = 1
 let g:pymode_rope_goto_definition_cmd = 'vnew'
-let g:pymode_rope_goto_definition_bind = '<c-j>'
+let g:pymode_rope_goto_definition_bind = '<c-g>'
