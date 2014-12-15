@@ -1,0 +1,10 @@
+#All aliases used come here
+
+alias clean-elastic_search="cd $ES_HOME; rm -rf data/* logs/*"
+alias clean-gs="cd $GS_HOME; mv deploy/templates .; rm -rf logs/* work/* deploy/*; mv templates deploy; cd -"
+
+alias src="cd $SRC_HOME"
+alias rm="rm -i"
+alias gitk="gitk &"
+alias ll="ls -latrGFh"
+alias login_desktop="ssh adityab@10.197.8.165"

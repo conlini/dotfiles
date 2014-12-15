@@ -1,9 +1,5 @@
-# source the exports and my_aliases if they exist
-if [[ -f .exports && -r .exports ]]; then
-    source ~/.exports
-fi
-if [[ -f .my_aliases && -r .my_aliases ]]; then
-    source ~/.my_aliases
+if [[ -f ~/.loader && -r ~/.loader ]]; then
+    source ~/.loader
 fi
 
 # enable and set wlaters theme
