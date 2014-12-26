@@ -62,9 +62,10 @@ set shiftwidth=4
 "set bs=2
 set tw=79
 set nowrap "dont wrap on load
-"set fo-=t "dont wrap text when typing
-set colorcolumn=79
-highlight ColorColumn ctermbg=233
+set fo+=t "dont wrap text when typing
+execute "set colorcolumn=" . join(range(81,335), ',')
+" set colorcolumn=79
+
 
 
 
@@ -93,9 +94,9 @@ set wildignore+=*/build/**
 let g:ctrlp_use_caching=0
 
 "set color theme solarized
-set background=dark
-let g:solarized_termcolors = 256  " New line!!
-colorscheme desert
+" set background=dark
+" let g:solarized_termcolors = 256  " New line!!
+" colorscheme desert
 
 
 " set foldmethod=syntax
@@ -105,3 +106,5 @@ set  nofoldenable
 let g:pymode_rope_lookup_project = 1
 let g:pymode_rope_goto_definition_cmd = 'vnew'
 let g:pymode_rope_goto_definition_bind = '<c-g>'
+let g:pymode_options_colorcolumn = 0
+
