@@ -60,10 +60,10 @@ set autoindent
 set smartindent
 set shiftwidth=4
 "set bs=2
-set tw=79
+"set tw=79
 set nowrap "dont wrap on load
 set fo+=t "dont wrap text when typing
-execute "set colorcolumn=" . join(range(81,335), ',')
+"execute "set colorcolumn=" . join(range(81,335), ',')
 " set colorcolumn=79
 
 

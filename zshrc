@@ -25,4 +25,4 @@ export SAVEHIST=$HISTSIZE
 setopt hist_ignore_all_dups # ignore duplicates in history
 
 setopt autocd # auto cd.. type /Users instead of cd /Users
-
+ alias vim='nocorrect ./... '
