@@ -1,11 +1,11 @@
-<<<<<<< Updated upstream
+
 #export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_51.jdk/Contents/Home
 export JAVA_HOME=/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home
 export M2_HOME=/usr/local/Cellar/maven30/3.0.5/libexec
-=======
+
 #export M2_HOME=/usr/local/Cellar/maven30/3.0.5/libexec
 export M3_HOME=/usr/local/Cellar/maven/3.3.9/libexec
->>>>>>> Stashed changes
+
 export DEV_HOME=$BASE/dev
 export SRC_HOME=$DEV_HOME/src
 export SCRIPTS_HOME=$DEV_HOME/scripts
@@ -16,17 +16,17 @@ export LANG=en_US.UTF-8
 export CLICOLOR=1
 export LSCOLORS=ExFxBxDxCxegedabagacad
 export MAVEN_OPTS="-Xms256m -Xmx4096m -XX:PermSize=256m -XX:MaxPermSize=512m"
-<<<<<<< Updated upstream
-=======
+
+
 #export _JAVA_OPTIONS="-Xms1024m -Xmx1024m -XX:MaxPermSize=512m -Duser.timezone="UTC""
->>>>>>> Stashed changes
+
 
 export GS_HOME=$DEV_HOME/gigaspace/current
 export ES_HOME=$DEV_HOME/elasticsearch/current
 export TACHYON_HOME=$SRC_HOME/tachyon
 export CLOJURE_HOME=/usr/local/lib/clojure
-<<<<<<< Updated upstream
-=======
+
+
 export GOPATH=$SRC_HOME/hub/cisco/gocode
 
 export TERRAFORM_HOME=$DEV_HOME/terraform
@@ -39,4 +39,4 @@ export GOKF=$GOSRC/github3.cisco.com/go-kf
 
 export PROTO_HOME=$DEV_HOME/protoc-3.3.0-osx-x86_64
 export PATH=$PROTO_HOME/bin:$PATH
->>>>>>> Stashed changes
+

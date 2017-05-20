@@ -11,8 +11,8 @@ alias rm="rm -i"
 alias gitk="gitk &"
 alias ll="ls -latrGFh"
 alias login_desktop="ssh adityab@10.197.8.165"
-<<<<<<< Updated upstream
-=======
+
+
 alias resync="git branch && git stash && git checkout master && git pull upstream master && git push origin master"
 alias metalint="$GOPATH/bin/gometalinter --checkstyle  --vendor --tests --exclude=mock --disable-all --enable=vet --enable=vetshadow --enable=golint  --enable=goconst"
 alias atom="open $DEV_HOME/atom/Atom.app"
@@ -89,4 +89,4 @@ cleancover () {
         done
         cd $present
 }        
->>>>>>> Stashed changes
+
