@@ -23,10 +23,12 @@
  ;; If there is more than one, they won't work right.
  )
 
+;; enable iswitch mode for quick switch of buffers
 (iswitchb-mode 1)
+(add-hook 'iswitchb-define-mode-map-hook 'iswitchb-local-keys)
+;; end iswitch
 
 ;; following are go-specific
-
 (defun set-exec-path-from-shell-PATH ()
   (let ((path-from-shell (replace-regexp-in-string
                           "[ \t\n]*$"
@@ -52,9 +54,9 @@
 
 (add-hook 'go-mode-hook 'my-go-mode-hook)
 
+;; end go specific
 
-
-; package-explorer
+;; package-explorer
 (require 'project-explorer)
 (global-set-key (kbd "M-e") 'project-explorer-toggle)
  (defun iswitchb-local-keys ()
@@ -66,4 +68,18 @@
 	      ("<up>"    . ignore             )
 	      ("<down>"  . ignore             ))))
 
-(add-hook 'iswitchb-define-mode-map-hook 'iswitchb-local-keys)
+;; end package-explorer
+
+;; delete highlighted text when start typing
+(delete-selection-mode t)
+
+;; highlight matching paren when cursor is over one
+(require 'paren)
+(show-paren-mode 1)
+
+;disable auto-backup
+(setq make-backup-files nil)
+
+;; forces line numbers to be displayed on mode line as well
+(line-number-mode t)
+(column-number-mode t)
