@@ -53,8 +53,8 @@ gobuild() {
 
 gcp() {
         if [[ "$#" -ne 2 ]]; then
-            echo "usage gcommitpush <message> <remoteBranchName>"
-            returun
+            echo "usage gcp <message> <remoteBranchName>"
+            return
         fi
         git commit -m $1
         git push origin $2
