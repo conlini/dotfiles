@@ -40,7 +40,7 @@
 
 (when window-system (set-exec-path-from-shell-PATH))
 
-(setenv "GOPATH" "/Users/adityabhasin/dev/src/hub/cisco/gocode")
+(setenv "GOPATH" "/Users/$USER/dev/src/hub/cisco/gocode")
 
 (defun my-go-mode-hook ()
   ; Use goimports instead of go-fmt
