@@ -1,6 +1,6 @@
 (require 'package) ;; You might already have this line
 (add-to-list 'package-archives
-             '("melpa" . "https://melpa.org/packages/"))
+             '("melpa" . "http://melpa.milkbox.net/packages/") t)
 (when (< emacs-major-version 24)
   ;; For important compatibility libraries like cl-lib
   (add-to-list 'package-archives '("gnu" . "http://elpa.gnu.org/packages/")))
@@ -38,8 +38,9 @@
     (setq eshell-path-env path-from-shell) ; for eshell users
     (setq exec-path (split-string path-from-shell path-separator))))
 
+(when window-system (set-exec-path-from-shell-PATH))
 
-(setenv "GOPATH" "/Users/adbhasin/dev/src/hub/cisco/gocode")
+(setenv "GOPATH" "/Users/adityabhasin/dev/src/hub/cisco/gocode")
 
 (defun my-go-mode-hook ()
   ; Use goimports instead of go-fmt
