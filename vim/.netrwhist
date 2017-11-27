@@ -1,0 +1,6 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_1='/Users/adbhasin/dotfiles'
+let g:netrw_dirhist_2='/Users/adbhasin'
+let g:netrw_dirhist_3='/Users/adbhasin/dotfiles'
+let g:netrw_dirhist_4='/Users/adbhasin/dev/src/hub/cisco/gocode/src/github3.cisco.com/masonics/achilles/deployment/kube'

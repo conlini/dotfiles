@@ -1,0 +1,33 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode jdee-mode
+      :tags 
+        '( ("org.junit.runner.JUnitCore" include nil nil [1 35])
+            ("org.junit.runner.Result" include nil nil [36 67])
+            ("org.junit.runner.notification.Failure" include nil nil [68 113])
+            ("TestRunner" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("main" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("args" variable
+                               (:dereference 1
+                                :type "String")
+                                (reparse-symbol formal_parameters) [168 181]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [144 416]))                  
+                :type "class")
+                nil [115 418]))          
+      :file "TestJunit.java"
+      :pointmax 419
+      :fsize 418
+      :lastmodtime '(22870 4388 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!adbhasin!dev!src!test!java_test!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,18 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode jdee-mode
+      :tags 
+        '( ("oracle.test" package nil nil [1 21])
+            ("java.util.Queue" include nil nil [23 46]))          
+      :file "BlockingQueue.java"
+      :pointmax 1838
+      :fsize 1837
+      :lastmodtime '(22870 4300 0 0)
+      :unmatched-syntax '((BRACE_BLOCK 694 . 1837) (GT 692 . 693) (IDENTIFIER 691 . 692) (PUBLIC 664 . 670) (LT 690 . 691) (BRACE_BLOCK 694 . 1835) (GT 692 . 693) (IDENTIFIER 691 . 692) (PUBLIC 664 . 670) (LT 690 . 691) (BRACE_BLOCK 694 . 1831) (GT 692 . 693) (IDENTIFIER 691 . 692) (PUBLIC 664 . 670) (LT 690 . 691) (BRACE_BLOCK 694 . 1830) (GT 692 . 693) (IDENTIFIER 691 . 692) (PUBLIC 664 . 670) (LT 690 . 691) (BRACE_BLOCK 694 . 1825) (GT 692 . 693) (IDENTIFIER 691 . 692) (PUBLIC 664 . 670) (LT 690 . 691) (BRACE_BLOCK 694 . 1820) (GT 692 . 693) (IDENTIFIER 691 . 692) (PUBLIC 664 . 670) (LT 690 . 691) (BRACE_BLOCK 694 . 1824) (GT 692 . 693) (IDENTIFIER 691 . 692) (PUBLIC 664 . 670) (LT 690 . 691) (BRACE_BLOCK 694 . 1821) (GT 692 . 693) (IDENTIFIER 691 . 692) (PUBLIC 664 . 670) (LT 690 . 691) (BRACE_BLOCK 694 . 1816) (GT 692 . 693) (IDENTIFIER 691 . 692) (PUBLIC 664 . 670) (LT 690 . 691) (BRACE_BLOCK 694 . 1815) (GT 692 . 693) (IDENTIFIER 691 . 692) (PUBLIC 664 . 670) (LT 690 . 691) (BRACE_BLOCK 694 . 1813) (GT 692 . 693) (IDENTIFIER 691 . 692) (PUBLIC 664 . 670) (LT 690 . 691) (BRACE_BLOCK 694 . 1807) (GT 692 . 693) (IDENTIFIER 691 . 692) (PUBLIC 664 . 670) (LT 690 . 691) (BRACE_BLOCK 694 . 1805) (GT 692 . 693) (IDENTIFIER 691 . 692) (PUBLIC 664 . 670) (LT 690 . 691) (BRACE_BLOCK 694 . 1807) (GT 692 . 693) (IDENTIFIER 691 . 692) (PUBLIC 664 . 670) (LT 690 . 691) (BRACE_BLOCK 694 . 1805) (GT 692 . 693) (IDENTIFIER 691 . 692) (PUBLIC 664 . 670) (LT 690 . 691) (BRACE_BLOCK 694 . 1806) (GT 692 . 693) (IDENTIFIER 691 . 692) (PUBLIC 664 . 670) (LT 690 . 691) (BRACE_BLOCK 694 . 1803) (GT 692 . 693) (IDENTIFIER 691 . 692) (PUBLIC 664 . 670) (LT 690 . 691) (BRACE_BLOCK 694 . 1801) (GT 692 . 693) (IDENTIFIER 691 . 692) (PUBLIC 664 . 670) (LT 690 . 691) (BRACE_BLOCK 694 . 1793) (GT 692 . 693) (IDENTIFIER 691 . 692) (PUBLIC 664 . 670) (LT 690 . 691) (BRACE_BLOCK 694 . 1797) (GT 692 . 693) (IDENTIFIER 691 . 692) (PUBLIC 664 . 670) (LT 690 . 691) (BRACE_BLOCK 694 . 1789) (GT 692 . 693) (IDENTIFIER 691 . 692) (PUBLIC 664 . 670) (LT 690 . 691) (BRACE_BLOCK 694 . 1787) (GT 692 . 693) (IDENTIFIER 691 . 692) (PUBLIC 664 . 670) (LT 690 . 691))))
+  :file "!Users!adbhasin!dev!src!test!java_test!src!oracle!test!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

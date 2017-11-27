@@ -1,0 +1,91 @@
+#All aliases used come here
+
+
+
+
+alias clean-elastic_search="cd $ES_HOME; rm -rf data/* logs/*"
+alias clean-gs="cd $GS_HOME; mv deploy/templates .; rm -rf logs/* work/* deploy/*; mv templates deploy; cd -"
+
+alias src="cd $SRC_HOME"
+alias rm="rm -i"
+alias gitk="gitk &"
+alias ll="ls -latrGFh"
+alias login_desktop="ssh adityab@10.197.8.165"
+
+
+alias resync="git branch && git stash && git checkout master && git pull upstream master && git push origin master"
+alias metalint="$GOPATH/bin/gometalinter --checkstyle  --vendor --tests --exclude=mock --disable-all --enable=vet --enable=vetshadow --enable=golint  --enable=goconst"
+alias atom="open $DEV_HOME/atom/Atom.app"
+alias vzroutes="sh $DEV_HOME/scripts/VZRoutes.sh"
+alias achilles="cd $MASONICS/achilles"
+alias hermes="cd $MASONICS/hermes"
+alias hector="cd $MASONICS/hector"
+alias tva="cd $GOKF/tva-linear"
+alias tval2="cd $GOKF/tva-linear-l2"
+alias phigo="cd $GOSRC/golang/phigo"
+alias tokenizer="cd $GOKF/tva-tokenizer"
+gco() {
+        if [[ "$#" -ne 1 ]]; then
+            echo "usage gco <branchName>"
+            return
+        fi
+        git checkout $1
+    }
+
+gnewbr() {
+        if [[ "$#" -ne 1 ]]; then
+            echo "usage gnewbr <branchName>"
+            return
+        fi
+        git checkout -b $1
+    }
+
+gobuild() {
+        if [[ "$#" -ne 1 ]]; then
+            echo "usage gobuild <param|path>"
+            return
+        fi
+        go fmt $1
+        go build $1
+        go test $1
+        metalint $1
+    }
+
+gcp() {
+        if [[ "$#" -ne 2 ]]; then
+            echo "usage gcp <message> <remoteBranchName>"
+            return
+        fi
+        git commit -m $1
+        git push origin $2
+    }
+
+
+alias gadd="git add"
+alias gstatus="git status"
+alias glsbr="git branch"
+
+gocover() {
+        go test -coverprofile=coverage.out
+        go tool cover -html=coverage.out 
+    }
+gocoall() {
+        present=$PWD
+        echo $present
+        for i in `(go list ./... | grep -v vendor)`;do
+            cd $GOPATH/src/$i
+            go test -coverprofile=coverage.out
+            go tool cover -html=coverage.out
+        done
+        cd $present
+}
+
+cleancover () {
+        present=$PWD
+        rm -f coverage.out
+        for i in `(go list ./... | grep -v vendor)`;do
+            cd $GOPATH/src/$i
+            rm -f coverage.out
+        done
+        cd $present
+}        
