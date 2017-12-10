@@ -1,29 +1,18 @@
 #All aliases used come here
 
-
-
-
-alias clean-elastic_search="cd $ES_HOME; rm -rf data/* logs/*"
-alias clean-gs="cd $GS_HOME; mv deploy/templates .; rm -rf logs/* work/* deploy/*; mv templates deploy; cd -"
-
 alias src="cd $SRC_HOME"
 alias rm="rm -i"
 alias gitk="gitk &"
 alias ll="ls -latrGFh"
-alias login_desktop="ssh adityab@10.197.8.165"
+
 
 
 alias resync="git branch && git stash && git checkout master && git pull upstream master && git push origin master"
 alias metalint="$GOPATH/bin/gometalinter --checkstyle  --vendor --tests --exclude=mock --disable-all --enable=vet --enable=vetshadow --enable=golint  --enable=goconst"
-alias atom="open $DEV_HOME/atom/Atom.app"
-alias vzroutes="sh $DEV_HOME/scripts/VZRoutes.sh"
-alias achilles="cd $MASONICS/achilles"
-alias hermes="cd $MASONICS/hermes"
-alias hector="cd $MASONICS/hector"
-alias tva="cd $GOKF/tva-linear"
-alias tval2="cd $GOKF/tva-linear-l2"
-alias phigo="cd $GOSRC/golang/phigo"
-alias tokenizer="cd $GOKF/tva-tokenizer"
+
+
+
+# git functions
 gco() {
         if [[ "$#" -ne 1 ]]; then
             echo "usage gco <branchName>"
@@ -65,6 +54,9 @@ alias gadd="git add"
 alias gstatus="git status"
 alias glsbr="git branch"
 
+# end git functions
+
+# go functions
 gocover() {
         go test -coverprofile=coverage.out
         go tool cover -html=coverage.out 
@@ -90,3 +82,4 @@ cleancover () {
         cd $present
 }        
 
+# end go functions
