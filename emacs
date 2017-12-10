@@ -10,11 +10,12 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(custom-enabled-themes (quote (tango-dark)))
  '(inhibit-startup-echo-area-message "")
  '(inhibit-startup-screen t)
  '(package-selected-packages
    (quote
-    (javaimp javap-mode elpy project-explorer go-eldoc exec-path-from-shell go-mode))))
+    (elpy project-explorer go-eldoc exec-path-from-shell go-mode))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
