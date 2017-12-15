@@ -23,6 +23,10 @@
  ;; If there is more than one, they won't work right.
  )
 
+;; set meta key to option
+( setq mac-option-key-is-meta t
+  mac-option-modifier 'meta)
+
 ;; enable iswitch mode for quick switch of buffers
 (iswitchb-mode 1)
 (add-hook 'iswitchb-define-mode-map-hook 'iswitchb-local-keys)

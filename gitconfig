@@ -1,0 +1,6 @@
+[user]
+	name = Aditya Bhasin
+[include]
+	   path = ~/.custom-git/.gitconfig
+[core]
+	editor = emacs
