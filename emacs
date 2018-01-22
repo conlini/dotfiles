@@ -15,7 +15,7 @@
  '(inhibit-startup-screen t)
  '(package-selected-packages
    (quote
-    (markdown-mode elpy project-explorer go-eldoc exec-path-from-shell go-mode))))
+    (jedi yaml-mode markdown-mode elpy project-explorer go-eldoc exec-path-from-shell go-mode))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -88,3 +88,7 @@
 ;; forces line numbers to be displayed on mode line as well
 (line-number-mode t)
 (column-number-mode t)
+
+
+(add-hook 'python-mode-hook 'jedi:setup)
+(setq jedi:complete-on-dot t)

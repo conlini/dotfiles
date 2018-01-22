@@ -1,13 +1,13 @@
 # source the exports and my_aliases if they exist
 
-if [[ -f .machine_specific && -r .machine_specific ]]; then
-    source ~/.machine_specific
-fi
-
 if [[ -f .exports && -r .exports ]]; then
     source ~/.exports
 fi
 if [[ -f .my_aliases && -r .my_aliases ]]; then
     source ~/.my_aliases
+fi
+
+if [[ -f .machine_specific && -r .machine_specific ]]; then
+    source ~/.machine_specific
 fi
 
