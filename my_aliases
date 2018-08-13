@@ -82,4 +82,14 @@ cleancover () {
         cd $present
 }        
 
+buildLinux() {
+        if [[ $# -ne 2 ]];then
+	     	echo "Usage: buildLinux <src> <out_dir>"
+		return
+	fi
+	gopath=$GOPATH
+	sudo env GOPATH=$gopath  env GOOS=linux GOARCH=amd64 go build -o $2 -i $1
+		
+}
 # end go functions
+

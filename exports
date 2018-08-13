@@ -21,9 +21,12 @@ export GOPATH=$SRC_HOME/gocode
 
 export TERRAFORM_HOME=$DEV_HOME/terraform
 
-export PATH=$GOPATH_BIN:$PATH:$TERRAFORM_HOME
+export PATH=$GOPATH/bin:$PATH:$TERRAFORM_HOME
 
 
-export PROTO_HOME=$DEV_HOME/protoc-3.3.0-osx-x86_64
+export PROTO_HOME=$DEV_HOME/protoc/latest
+
+
+# add librxml2 and 8.3.3 commad lines tools to the path
+export PATH=/usr/local/opt/libxml2/bin:/Library/Developer/CommandLineTools/usr/bin:$PATH
 export PATH=$PROTO_HOME/bin:$PATH
-

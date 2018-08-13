@@ -11,5 +11,39 @@
 #export PATH=$HOME/.npm-packages/bin:/Users/adbhasin/dev/python/current/bin:$PATH
 
 
-export API_STREAM_HOME=$SRC_HOME/apistreaming
-alias apistream="cd $API_STREAM_HOME; export GOPATH=$API_STREAM_HOME"
+#export API_STREAM_HOME=$SRC_HOME/apistreaming
+#alias apistream="cd $API_STREAM_HOME; export GOPATH=$API_STREAM_HOME"
+
+export CENTRAL_LITE=vader-1-coreos-5341.test.pdt1.arubathena.com
+alias lite="ssh core@$CENTRAL_LITE"
+
+alias yoda="ssh -i ~/.ssh/yoda.pem ubuntu@52.35.150.253"
+alias husky="ssh -i ~/.ssh/husky.pem ubuntu@10.53.96.214"
+
+export PYTHON_SOURCE=$SRC_HOME/python_sources
+alias ads="ssh core@$CENTRAL_LITE -L 8081:10.3.0.15:80"
+
+# adding updateservicectl to path
+export PATH=$DEV_HOME/updateservicectl/latest:$PATH
+
+# Aarti clite
+alias kylo="ssh core@kylo-ren-1-coreos-5776.test.pdt1.arubathena.com -L 8080:10.3.0.15:80"
+
+
+function to_lite() {
+	 if [[ $# -ne 2 ]];then
+	    echo "usage: to_lite <src> <dest>"
+	    return
+	 fi
+
+	 scp -r $1 core@$CENTRAL_LITE:$2
+}
+
+
+function from_lite() {
+	 if [[ $# -ne 2 ]];then
+	    echo "usage: from_lite <src> <dest>"
+	    return
+	 fi
+	 scp -r core@$CENTRAL_LITE:$1 $2
+}

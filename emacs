@@ -10,12 +10,14 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(column-number-mode t)
  '(custom-enabled-themes (quote (tango-dark)))
  '(inhibit-startup-echo-area-message "")
  '(inhibit-startup-screen t)
  '(package-selected-packages
    (quote
-    (jedi yaml-mode markdown-mode elpy project-explorer go-eldoc exec-path-from-shell go-mode))))
+    (go-guru projectile go-autocomplete jedi yaml-mode markdown-mode elpy project-explorer go-eldoc exec-path-from-shell go-mode)))
+ '(show-paren-mode t))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -33,30 +35,28 @@
 ;; end iswitch
 
 ;; following are go-specific
-(defun set-exec-path-from-shell-PATH ()
-  (let ((path-from-shell (replace-regexp-in-string
-                          "[ \t\n]*$"
-                          ""
-                          (shell-command-to-string "$SHELL --login -i -c 'echo $PATH'"))))
-    (setenv "PATH" path-from-shell)
-    (setq eshell-path-env path-from-shell) ; for eshell users
-    (setq exec-path (split-string path-from-shell path-separator))))
-
-(when window-system (set-exec-path-from-shell-PATH))
-
-(setenv "GOPATH" "/Users/$USER/dev/src/hub/cisco/gocode")
-
+(when (memq window-system '(mac ns))
+  (exec-path-from-shell-initialize)
+  (exec-path-from-shell-copy-env "GOPATH"))
+  
 (defun my-go-mode-hook ()
-  ; Use goimports instead of go-fmt
+  ;; Use goimports instead of go-fmt
   (setq gofmt-command "goimports")
-  ; Call Gofmt before saving
+  ;; Call Gofmt before saving
   (add-hook 'before-save-hook 'gofmt-before-save)
   ; eldoc
-  (go-eldoc-setup)
- ; godef
+ (go-eldoc-setup)
+ ;; godef
   (local-set-key (kbd "M-.") 'godef-jump)
+  (local-set-key (kbd "M-,") 'pop-tag-mark)
+  (go-guru-hl-identifier-mode)
+  (auto-complete-mode 1)
 )
 
+
+(with-eval-after-load 'go-mode
+   (require 'go-autocomplete))
+   
 (add-hook 'go-mode-hook 'my-go-mode-hook)
 
 ;; end go specific
@@ -92,3 +92,11 @@
 
 (add-hook 'python-mode-hook 'jedi:setup)
 (setq jedi:complete-on-dot t)
+
+
+(projectile-mode)
+(defun my-switch-project-hook ()
+  (go-set-project))
+(add-hook 'projectile-after-switch-project-hook #'my-switch-project-hook)
+
+

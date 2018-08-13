@@ -1,1 +1,708 @@
-(nil)
+((("printed" .
+   [2 0 0 0 0 0 0])
+  ("i" .
+   [1])
+  ("Value1" .
+   [1 0 0 0 0 0])
+  ("loaded" .
+   [3 0 0 0 0 0])
+  ("create_image" .
+   [0 0 0 0 0 0 0 0 1 0 0 0])
+  ("create" .
+   [1 0 0 0 0 0])
+  ("tmp_folder" .
+   [0 0 0 0 1 0 0 0 0 0])
+  ("run" .
+   [2 0 0])
+  ("tag" .
+   [3 0 0])
+  ("build" .
+   [1 0 0 0 0])
+  ("version" .
+   [5 0 0 0 0 0 0])
+  ("PostgresKey" .
+   [0 0 0 1 0 0 0 0 0 0 0])
+  ("x" .
+   [1])
+  ("kairosResposes" .
+   [0 0 1 0 0 0 0 0 0 0 0 0 0 0])
+  ("respStructCount" .
+   [0 0 0 1 0 0 0 0 0 0 0 0 0 0 0])
+  ("respStructSum" .
+   [0 0 0 0 0 1 0 0 0 0 0 0 0])
+  ("respCount" .
+   [2 0 0 0 0 0 0 0 0])
+  ("Values" .
+   [0 1 0 0 0 0])
+  ("Results" .
+   [0 1 0 0 0 0 0])
+  ("q" .
+   [1])
+  ("Queries" .
+   [0 1 0 0 0 0 0])
+  ("respSum" .
+   [3 0 0 0 0 0 0])
+  ("servers" .
+   [1 0 0 0 0 0 0])
+  ("tags" .
+   [2 0 0 0])
+  ("respErr" .
+   [0 0 0 0 1 1 0])
+  ("bytes" .
+   [1 0 0 0 0])
+  ("Buffer" .
+   [2 0 0 0 0 0])
+  ("buf" .
+   [3 1 0])
+  ("Background" .
+   [0 0 0 1 0 0 0 0 0 0])
+  ("WithCancel" .
+   [1 0 0 0 0 0 0 0 0 0])
+  ("ctx" .
+   [1 0 0])
+  ("publishFailChan" .
+   [0 0 1 0 0 1 0 0 0 0 0 0 0 0 0])
+  ("StatsData" .
+   [0 0 1 0 0 0 0 0 0])
+  ("MetricType" .
+   [0 1 0 0 0 0 0 0 0 0])
+  ("kairosPublisher" .
+   [0 1 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("stats" .
+   [3 0 0 0 0])
+  ("SetMaxChannelBuffer" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("maxDuration" .
+   [0 0 0 1 0 0 0 0 0 0 0])
+  ("SetBufferingTime" .
+   [1 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0])
+  ("cap" .
+   [2 0 0])
+  ("SetCapacity" .
+   [1 0 0 0 0 0 0 0 0 0 0])
+  ("maxCapacity" .
+   [1 1 0 0 0 0 0 0 0 0 0])
+  ("maxChannelBuffer" .
+   [0 0 0 1 0 0 0 0 1 0 0 0 0 0 0 0])
+  ("opt" .
+   [1 0 0])
+  ("options" .
+   [7 1 0 0 0 0 0])
+  ("Option" .
+   [4 0 1 0 0 0])
+  ("MaxDuration" .
+   [0 1 0 1 0 0 0 0 0 0 0])
+  ("MaxCapacity" .
+   [0 1 1 0 1 0 0 0 0 0 0])
+  ("defaultOptions" .
+   [2 0 0 2 0 0 0 0 0 0 0 0 0 0])
+  ("Duration" .
+   [2 0 0 0 0 0 0 0])
+  ("internalBuffer" .
+   [0 0 0 1 0 0 0 0 0 0 0 0 0 0])
+  ("KairosDBConfig" .
+   [2 1 1 0 0 0 0 0 0 0 0 0 0 0])
+  ("apistreamingSettings" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 0 0])
+  ("StatsCollectorConfig" .
+   [0 0 0 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("DefaultConfigKeys" .
+   [0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("InsecureSkipVerify" .
+   [0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("Config" .
+   [0 0 0 1 0 0])
+  ("ProxyFromEnvironment" .
+   [0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("Dialer" .
+   [0 0 0 1 0 0])
+  ("dialer" .
+   [1 0 0 0 0 0])
+  ("TLSClientConfig" .
+   [0 2 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("dialder" .
+   [0 0 0 1 0 0 0])
+  ("DefaultDialer" .
+   [0 0 1 0 0 0 0 0 0 0 0 0 0])
+  ("websocket" .
+   [0 0 1 0 0 0 0 0 0])
+  ("Exchange" .
+   [0 0 1 0 0 0 0 0])
+  ("Shards" .
+   [1 0 0 0 0 0])
+  ("StreamQs" .
+   [0 0 0 1 0 0 0 0])
+  ("Servers" .
+   [3 0 0 0 0 0 0])
+  ("StreamQServers" .
+   [1 0 0 0 0 1 0 1 0 0 0 0 0 0])
+  ("Cluster" .
+   [1 0 2 0 0 0 0])
+  ("SubsServer" .
+   [0 1 0 0 0 0 0 0 0 0])
+  ("HTTPPostBox" .
+   [0 1 0 0 0 0 0 0 0 0 0])
+  ("ServerType" .
+   [0 1 0 2 0 0 0 0 0 0])
+  ("WSStreamServer" .
+   [0 1 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("Level" .
+   [1 0 0 0 0])
+  ("Type" .
+   [1 0 0 0])
+  ("Password" .
+   [0 0 0 1 1 0 0 0])
+  ("Username" .
+   [0 0 0 0 1 0 1 0])
+  ("URL" .
+   [1 0 0])
+  ("UDPIPCPorts" .
+   [0 1 0 0 0 0 0 0 0 0 0])
+  ("Compress" .
+   [1 0 0 0 0 0 0 0])
+  ("PushInSecure" .
+   [0 0 1 0 0 0 0 0 0 0 0 0])
+  ("MaxTCPWorkers" .
+   [0 0 1 0 0 0 0 0 0 0 0 0 0])
+  ("MaxWorkers" .
+   [0 0 0 1 0 0 0 0 0 0])
+  ("MaxQueues" .
+   [0 0 0 1 0 0 0 0 0])
+  ("GMasterType" .
+   [0 1 0 0 0 0 0 0 0 0 0])
+  ("Master" .
+   [0 0 0 1 0 0])
+  ("LogType" .
+   [0 0 1 0 0 0 0])
+  ("Logging" .
+   [0 0 0 1 0 0 0])
+  ("StreamingServerType" .
+   [0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0])
+  ("Server" .
+   [2 0 0 0 0 0])
+  ("StreamCluster" .
+   [0 0 0 0 1 0 0 0 0 0 0 0 0])
+  ("StreamSrvs" .
+   [0 0 0 0 0 1 1 1 0 1])
+  ("NatsType" .
+   [0 0 1 0 0 0 0 0])
+  ("Redis_Buffer" .
+   [0 0 0 0 0 0 0 1 0 0 0 0])
+  ("RedisType" .
+   [0 0 2 0 0 0 0 0 0])
+  ("Redis" .
+   [1 0 0 0 0])
+  ("RMQServers" .
+   [0 0 1 0 0 0 0 0 0 0])
+  ("RMQSrvs" .
+   [0 0 1 0 0 0 0])
+  ("Comment" .
+   [1 0 0 1 0 0 0])
+  ("Settings" .
+   [2 0 0 0 0 0 0 0])
+  ("FailNow" .
+   [1 0 0 0 0 1 0])
+  ("StartPosition_First" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("signalChan" .
+   [0 0 0 1 0 0 0 0 0 0])
+  ("m" .
+   [1])
+  ("Msg" .
+   [1 0 0])
+  ("natsCid" .
+   [2 0 0 0 0 0 0])
+  ("Parse" .
+   [1 0 0 0 0])
+  ("natsPort" .
+   [3 0 0 0 0 0 0 0])
+  ("flag" .
+   [4 0 0 0])
+  ("natsAddr" .
+   [4 0 0 1 0 0 0 0])
+  ("maxBytes" .
+   [1 0 0 1 0 0 0 0])
+  ("n" .
+   [2])
+  ("natsServer" .
+   [2 0 0 0 0 0 0 0 0 0])
+  ("Second" .
+   [2 0 0 1 0 0])
+  ("outer" .
+   [3 0 0 0 0])
+  ("Close" .
+   [2 1 0 0 0])
+  ("Unsubscribe" .
+   [0 1 0 0 0 0 1 0 0 0 0])
+  ("Publisher" .
+   [0 1 0 0 0 0 0 0 0])
+  ("config" .
+   [1 0 0 0 0 0])
+  ("Port" .
+   [3 0 0 0])
+  ("Host" .
+   [3 0 0 0])
+  ("Frequency" .
+   [0 1 0 0 0 0 0 0 0])
+  ("Flush" .
+   [0 1 0 0 0])
+  ("CompressionGZIP" .
+   [0 0 0 0 0 0 0 0 0 0 0 1 0 0 0])
+  ("Compression" .
+   [0 0 1 0 0 0 0 0 0 0 0])
+  ("Producer" .
+   [0 0 0 1 0 0 0 0])
+  ("NewConfig" .
+   [0 0 0 0 0 0 0 1 0])
+  ("NewAsyncProducer" .
+   [0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0])
+  ("producer" .
+   [1 0 0 0 0 0 0 0])
+  ("AsyncProducer" .
+   [0 0 0 0 1 0 0 0 0 0 0 0 0])
+  ("p" .
+   [4])
+  ("Kafka" .
+   [0 0 1 0 0])
+  ("Nats" .
+   [1 0 1 0])
+  ("QueueType" .
+   [0 1 0 0 0 0 0 0 0])
+  ("Broker" .
+   [1 0 0 0 0 0])
+  ("K" .
+   [1])
+  ("KafkaSync" .
+   [2 0 0 0 0 0 0 0 0])
+  ("iota" .
+   [1 0 0 0])
+  ("MessageQueue" .
+   [0 0 1 1 0 0 0 0 0 0 0 0])
+  ("pub" .
+   [2 0 0])
+  ("s" .
+   [6])
+  ("Bytes" .
+   [3 2 0 0 0])
+  ("byte" .
+   [5 0 0 0])
+  ("compressData" .
+   [3 0 0 0 0 0 0 0 0 0 0 0])
+  ("data" .
+   [5 0 0 0])
+  ("compressed" .
+   [3 0 0 0 0 0 0 0 0 0])
+  ("ByteEncoder" .
+   [0 0 0 0 1 0 0 0 0 0 0])
+  ("Value" .
+   [0 1 0 0 0])
+  ("ktopic" .
+   [1 0 0 0 0 0])
+  ("Topic" .
+   [1 0 0 0 0])
+  ("ProducerMessage" .
+   [0 0 0 1 0 0 0 0 0 0 0 0 0 0 0])
+  ("message" .
+   [4 0 0 0 0 0 0])
+  ("topic" .
+   [13 0 0 0 0])
+  ("t" .
+   [2])
+  ("C" .
+   [2])
+  ("clientId" .
+   [4 0 0 0 0 0 0 0])
+  ("int" .
+   [12 0 0])
+  ("port" .
+   [8 0 0 0])
+  ("host" .
+   [4 0 0 0])
+  ("Options" .
+   [4 0 0 0 0 0 0])
+  ("publishFunc" .
+   [1 0 0 0 0 0 0 0 0 0 0])
+  ("PublishNats" .
+   [0 0 0 1 0 0 0 0 0 0 0])
+  ("PublishFunc" .
+   [0 0 0 1 0 0 0 0 0 0 0])
+  ("publichFunc" .
+   [1 0 0 0 0 0 0 0 0 0 0])
+  ("password" .
+   [1 0 0 0 0 0 0 0])
+  ("username" .
+   [1 0 0 0 0 0 0 0])
+  ("errs" .
+   [2 0 0 0])
+  ("cid" .
+   [5 0 0])
+  ("auth" .
+   [2 0 0 0])
+  ("redis" .
+   [1 0 0 0 0])
+  ("goredis" .
+   [1 0 0 0 0 0 0])
+  ("clear" .
+   [1 0 0 0 0])
+  ("main" .
+   [3 0 0 0])
+  ("InfoLevel" .
+   [0 1 0 0 0 0 0 0 0])
+  ("logger" .
+   [1 0 0 0 0 0])
+  ("InitApp" .
+   [0 0 0 0 1 0 0])
+  ("l" .
+   [2])
+  ("New" .
+   [0 0 1])
+  ("Info" .
+   [0 1 0 0])
+  ("Fields" .
+   [0 1 0 0 0 0])
+  ("v" .
+   [4])
+  ("true" .
+   [9 0 0 0])
+  ("string" .
+   [37 0 0 0 0 0])
+  ("k" .
+   [7])
+  ("_" .
+   [12])
+  ("OK" .
+   [3 0])
+  ("orderedKeys" .
+   [0 0 1 0 0 0 0 0 0 0 0])
+  ("String" .
+   [1 0 0 0 0 0])
+  ("nil" .
+   [18 0 0])
+  ("fields" .
+   [0 0 1 0 0 0])
+  ("appName" .
+   [0 1 0 0 0 0 0])
+  ("user" .
+   [1 0 0 0])
+  ("decodeAndSave" .
+   [1 0 1 0 0 0 0 0 0 0 0 0 0])
+  ("w" .
+   [1])
+  ("target" .
+   [3 0 0 0 0 0])
+  ("key" .
+   [7 0 0])
+  ("error" .
+   [6 0 0 0 0])
+  ("err" .
+   [19 0 0])
+  ("NewDecoder" .
+   [0 0 0 2 0 0 0 0 0 0])
+  ("r" .
+   [7])
+  ("Decode" .
+   [1 0 1 0 0 0])
+  ("configLock" .
+   [0 0 0 0 0 0 1 1 0 0])
+  ("Lock" .
+   [1 0 0 0])
+  ("Unlock" .
+   [0 1 0 0 0 0])
+  ("loadedConfigs" .
+   [0 0 0 0 1 0 0 0 0 0 0 0 0])
+  ("Body" .
+   [2 1 0 0])
+  ("answer" .
+   [4 0 0 0 0 0])
+  ("infra" .
+   [1 0 0 0 0])
+  ("ival" .
+   [1 0 0 0])
+  ("fmt" .
+   [4 0 0])
+  ("Sprintf" .
+   [10 0 0 0 0 0 0])
+  ("AdsServicePort" .
+   [0 0 1 0 0 0 0 0 0 0 0 0 0 0])
+  ("PostgresWrapper" .
+   [0 0 0 0 0 0 0 0 0 1 1 1 0 0 0])
+  ("MyStruct" .
+   [0 0 0 1 0 0 0 0])
+  ("mystruct" .
+   [2 0 0 0 0 0 0 0])
+  ("Println" .
+   [6 0 0 0 0 0 0])
+  ("MyField" .
+   [0 1 0 0 0 0 0])
+  ("b" .
+   [6])
+  ("infraConfigs" .
+   [0 0 0 0 0 0 0 0 1 0 0 0])
+  ("rclient" .
+   [0 0 1 0 0 0 0])
+  ("Get" .
+   [1 1 0])
+  ("Result" .
+   [1 0 1 0 0 0])
+  ("Nil" .
+   [2 0 0])
+  ("val" .
+   [1 0 0])
+  ("sigchan" .
+   [1 0 0 1 0 0 0])
+  ("connect" .
+   [0 0 1 0 0 0 0])
+  ("kafkaOptions" .
+   [1 0 0 0 0 0 0 0 0 0 0 0])
+  ("kafkaAddress" .
+   [1 0 0 0 0 0 0 0 0 0 0 0])
+  ("kafkaPort" .
+   [2 0 0 0 0 0 0 0 0])
+  ("IntVar" .
+   [1 0 0 0 0 0])
+  ("disconnect" .
+   [0 0 0 0 1 0 0 0 0 0])
+  ("Int63" .
+   [1 0 0 0 0])
+  ("payload" .
+   [3 0 0 0 0 0 0])
+  ("make" .
+   [5 0 0 0])
+  ("payloadSize" .
+   [1 0 0 1 0 0 1 0 0 0 0])
+  ("publish" .
+   [2 0 0 0 0 0 0])
+  ("c" .
+   [4])
+  ("StringVar" .
+   [5 0 0 0 0 0 1 0 0])
+  ("kafk" .
+   [1 0 0 0])
+  ("Sleep" .
+   [0 0 3 1 0])
+  ("Intn" .
+   [0 1 0 0])
+  ("Millisecond" .
+   [0 1 1 1 1 0 0 0 0 0 0])
+  ("signal" .
+   [1 0 0 0 0 0])
+  ("Printf" .
+   [6 0 0 0 0 0])
+  ("pkg2" .
+   [2 0 0 0])
+  ("pkg1" .
+   [1 0 0 0])
+  ("topics" .
+   [1 0 0 0 0 0])
+  ("customerIds" .
+   [2 0 0 0 0 0 0 0 0 0 0])
+  ("parsedTopics" .
+   [1 0 0 0 0 0 0 0 0 0 0 0])
+  ("parsedCustomers" .
+   [0 0 0 0 0 0 1 0 0 0 0 0 0 0 0])
+  ("unlockTopic" .
+   [1 0 0 0 0 0 0 0 0 0 0])
+  ("customerId" .
+   [5 0 0 0 0 0 0 0 0 0])
+  ("natsCLusterId" .
+   [0 0 0 2 1 1 0 0 0 0 0 0 0])
+  ("Print" .
+   [5 0 0 0 0])
+  ("Fatal" .
+   [3 1 0 0 0])
+  ("natsClusterId" .
+   [0 0 0 1 0 0 0 0 0 0 0 0 0])
+  ("server" .
+   [1 0 0 0 0 0])
+  ("Addr" .
+   [0 0 0 1])
+  ("settings" .
+   [1 0 1 0 0 0 0 0])
+  ("expectedSetting" .
+   [0 0 2 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("Logf" .
+   [2 0 0 0])
+  ("Fail" .
+   [0 1 0 0])
+  ("Minute" .
+   [0 0 0 0 2 0])
+  ("SetCloseHandler" .
+   [0 0 0 1 0 0 0 0 0 0 0 0 0 0 0])
+  ("code" .
+   [4 0 0 0])
+  ("text" .
+   [3 0 0 0])
+  ("APIStreamingSettings" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("j" .
+   [2])
+  ("staticConf" .
+   [0 0 0 0 1 0 0 0 0 0])
+  ("NewRelic_Conf" .
+   [0 0 1 0 0 1 0 0 0 0 0 0 0])
+  ("apiStreamingSettings" .
+   [0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("apistreaminWrapper" .
+   [0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("apistreaming" .
+   [2 0 0 0 0 0 0 0 0 0 0 0])
+  ("apistreamingWrapper" .
+   [0 0 1 3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("adsclient" .
+   [0 0 3 1 0 0 0 0 0])
+  ("LoadConfig" .
+   [0 0 0 0 1 0 0 0 0 0])
+  ("APIStreaming" .
+   [1 0 0 0 0 0 0 0 0 0 0 0])
+  ("keys" .
+   [3 0 0 0])
+  ("interface" .
+   [0 0 0 0 0 2 2 0 0])
+  ("len" .
+   [10 0 0])
+  ("apiStreamingKey" .
+   [0 0 2 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("toLoadConfs" .
+   [0 0 5 1 0 0 0 0 0 0 0])
+  ("new" .
+   [5 0 0])
+  ("sysAppKey" .
+   [0 0 1 1 0 0 0 0 0])
+  ("sysAppWrapper" .
+   [0 0 0 1 0 0 0 0 0 0 0 0 0])
+  ("clickStreamRedisKey" .
+   [0 0 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("redisWrapper" .
+   [0 0 2 0 0 0 0 0 0 0 0 0])
+  ("RedisKey" .
+   [0 1 0 0 1 0 0 0])
+  ("ofcRmqpKey" .
+   [0 0 2 0 0 0 0 0 0 0])
+  ("rmqServerWrapper" .
+   [0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("SysAppKey" .
+   [0 1 0 0 0 0 0 0 0])
+  ("opts" .
+   [4 0 0 0])
+  ("FindStringSubmatch" .
+   [0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("srvr" .
+   [1 0 0 0])
+  ("matches" .
+   [3 0 0 0 0 0 0])
+  ("bool" .
+   [1 0 0 0])
+  ("channelData" .
+   [1 1 1 1 0 0 0 0 0 0 0])
+  ("endPoint" .
+   [1 0 1 0 0 0 0 0])
+  ("Error" .
+   [3 0 0 0 0])
+  ("channel" .
+   [1 0 0 0 0 0 0])
+  ("count" .
+   [2 0 0 0 0])
+  ("fetchChannelData" .
+   [0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0])
+  ("monitoringAPI" .
+   [0 0 0 1 0 0 0 0 0 0 0 0 0])
+  ("respChan" .
+   [0 0 0 1 1 0 0 0])
+  ("d" .
+   [6])
+  ("Name" .
+   [0 2 0 0])
+  ("Messages" .
+   [0 2 0 0 0 0 0 0])
+  ("send" .
+   [1 0 0 0])
+  ("rcvd" .
+   [1 0 1 1])
+  ("sent" .
+   [2 0 0 0])
+  ("Header" .
+   [2 0 0 0 0 0])
+  ("Add" .
+   [1 0 0])
+  ("Write" .
+   [1 0 0 0 0])
+  ("HandleFunc" .
+   [1 0 0 0 0 0 0 0 0 0])
+  ("natsMonitoring" .
+   [0 1 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("Status" .
+   [0 1 1 0 0 0])
+  ("StatusOK" .
+   [0 0 0 0 0 0 0 1])
+  ("chann" .
+   [1 0 0 0 0])
+  ("chanData" .
+   [0 0 1 1 0 0 0 0])
+  ("returnChan" .
+   [1 0 0 0 0 0 0 0 0 0])
+  ("StatusCode" .
+   [2 1 0 0 0 0 0 0 0 0])
+  ("UseGrpc" .
+   [0 0 1 1 0 0 0])
+  ("useGrpc" .
+   [0 0 0 0 1 0 0])
+  ("requests" .
+   [7 0 0 0 0 0 0 0])
+  ("EgressPublishFail" .
+   [1 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0])
+  ("Atoi" .
+   [2 0 0 0])
+  ("cancel" .
+   [4 0 0 0 1 0])
+  ("f" .
+   [3])
+  ("log" .
+   [2 0 0])
+  ("req" .
+   [4 0 0])
+  ("Log" .
+   [3 0 0])
+  ("request" .
+   [1 0 0 0 0 0 0])
+  ("Errorf" .
+   [1 0 0 0 0 0])
+  ("Skip" .
+   [0 1 0 0])
+  ("currentCount" .
+   [0 0 0 0 0 0 0 1 0 0 0 0])
+  ("EgressPublishSuccess" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0])
+  ("Microsecond" .
+   [0 0 1 0 0 0 0 0 0 0 0])
+  ("stat" .
+   [4 0 0 0])
+  ("successStatsChan" .
+   [0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("uint64" .
+   [1 0 0 0 0 0])
+  ("publishSuccessChan" .
+   [0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("clickstreamTopic" .
+   [0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("default" .
+   [1 0 0 0 0 0 0])
+  ("kong_package" .
+   [3 0 0 0 0 0 0 0 0 0 0 0])
+  ("on_prem" .
+   [3 0 0 0 0 0 0])
+  ("eval" .
+   [2 0 0 0])
+  ("app_id" .
+   [1 0 0 0 0 0])
+  ("app_id_kong" .
+   [2 0 0 0 0 0 0 0 0 0 0])
+  ("Debug" .
+   [1 0 0 0 0])
+  ("conn" .
+   [1 0 0 0])
+  ("Accept" .
+   [0 0 0 1 0 0])
+  ("ReadString" .
+   [1 0 0 0 0 0 0 0 0 0])
+  ("Now" .
+   [1 0 0])))
