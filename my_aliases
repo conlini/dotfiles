@@ -7,7 +7,7 @@ alias ll="ls -latrGFh"
 
 
 
-alias resync="git branch && git stash && git checkout master && git pull upstream master && git push origin master"
+alias resync="git branch && git stash && git checkout main && git pull upstream main && git push origin main"
 alias metalint="$GOPATH/bin/gometalinter --checkstyle  --vendor --tests --exclude=mock --disable-all --enable=vet --enable=vetshadow --enable=golint  --enable=goconst"
 
 
@@ -48,6 +48,25 @@ gcp() {
         git commit -m $1
         git push origin $2
     }
+
+
+gr() {
+   current_br=`git branch --show-current`
+   echo "Current branch -   $current_br.   moving to main"
+   git stash
+   echo "Stashing changes for later" 
+   git checkout main
+   echo "Fetching latest from CHP main"
+   git fetch CHP main
+   echo "Rebasing CHP/main to local/main"
+   git rebase CHP/main
+   echo "pushing changes to origin/main. Abort now if you have merge conflicts"
+   git push origin main
+   echo "Moving back to $current_br"
+   git checkout $current_br
+   echo "Popping stashed changes"
+   git stash pop
+}
 
 
 alias gadd="git add"
@@ -93,3 +112,44 @@ buildLinux() {
 }
 # end go functions
 
+
+#pandoc function
+render() {
+	 if [[ $# -ne 2 ]];then
+	    echo "Usage: render <file_name_no_ext> <target_format>"
+	    return
+	 fi
+	 pandoc $1.md -f markdown -t $2 -s -o $1.render.$2
+	 open $1.render.$2
+}
+
+
+
+
+# pinot and kakfa commands
+
+alias zookeeper="zookeeper-server-start /usr/local/etc/kafka/zookeeper.properties"
+alias kafka="kafka-server-start /usr/local/etc/kafka/server.properties"
+alias pinot-zookeeper="$PINOT_DIST/bin/pinot-admin.sh StartZookeeper -zkPort 2191"
+alias pinot-controller="$PINOT_DIST/bin/pinot-admin.sh StartController  -zkAddress localhost:2181  -controllerPort 9000 -dataDir /Users/a0b06xn/dev/data/pinotController"
+alias pinot-broker="$PINOT_DIST/bin/pinot-admin.sh StartBroker -zkAddress localhost:2181"
+alias pinot-server="$PINOT_DIST/bin/pinot-admin.sh StartServer -zkAddress localhost:2181 -dataDir /Users/a0b06xn/dev/data/pinotServerData -segmentDir /Users/a0b06xn/dev/data/pinotSegments"
+alias pinot-all="pinot-zookeeper && pinot-controller && pinot-broker && pinot-server"
+alias mci="mvn clean install -DskipTests"
+
+build_pinot() {
+   cd $PINOT_HOME
+   mci -Pbin-dist
+}
+
+
+PinotAddTable() {
+	 if [[ $# -ne 2 ]];then
+	    echo "Usage: PinotAddTable <tableConfigFile> <schemaFile>"
+	    return
+	 fi
+
+		$PINOT_DIST/bin/pinot-admin.sh AddTable -tableConfigFile $1 -schemaFile $2 -exec
+}
+
+alias cosmosConnectStr="cat $DEV_HOME/tracerx/DB_details.txt | pbcopy"

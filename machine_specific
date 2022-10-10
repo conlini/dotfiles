@@ -1,6 +1,6 @@
 #export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_51.jdk/Contents/Home
 #export JAVA_HOME=/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home
-#export M2_HOME=/usr/local/Cellar/maven30/3.0.5/libexec          
+export M2_HOME=/usr/local/Cellar/maven/3.6.2/libexec
 #export M3_HOME="/usr/local/Cellar/maven@3.3/3.3.9/libexec"
 #export JVM_OPTS=-XX:-UseSuperWord
 #export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_51.jdk/Contents/Home
@@ -11,39 +11,13 @@
 #export PATH=$HOME/.npm-packages/bin:/Users/adbhasin/dev/python/current/bin:$PATH
 
 
-#export API_STREAM_HOME=$SRC_HOME/apistreaming
-#alias apistream="cd $API_STREAM_HOME; export GOPATH=$API_STREAM_HOME"
-
-export CENTRAL_LITE=vader-1-coreos-5341.test.pdt1.arubathena.com
-alias lite="ssh core@$CENTRAL_LITE"
-
-alias yoda="ssh -i ~/.ssh/yoda.pem ubuntu@52.35.150.253"
-alias husky="ssh -i ~/.ssh/husky.pem ubuntu@10.53.96.214"
-
 export PYTHON_SOURCE=$SRC_HOME/python_sources
-alias ads="ssh core@$CENTRAL_LITE -L 8081:10.3.0.15:80"
 
-# adding updateservicectl to path
-export PATH=$DEV_HOME/updateservicectl/latest:$PATH
+## adding updateservicectl to path
+#export PATH=$DEV_HOME/updateservicectl/latest:$PATH
 
-# Aarti clite
-alias kylo="ssh core@kylo-ren-1-coreos-5776.test.pdt1.arubathena.com -L 8080:10.3.0.15:80"
+alias myid='whoami | pbcopy'
 
+export CHP_SRC=$JAVA_SRC/CHP
 
-function to_lite() {
-	 if [[ $# -ne 2 ]];then
-	    echo "usage: to_lite <src> <dest>"
-	    return
-	 fi
-
-	 scp -r $1 core@$CENTRAL_LITE:$2
-}
-
-
-function from_lite() {
-	 if [[ $# -ne 2 ]];then
-	    echo "usage: from_lite <src> <dest>"
-	    return
-	 fi
-	 scp -r core@$CENTRAL_LITE:$1 $2
-}
+export JAVA_OPTS="-Xms4G -Xmx8G  -Dhttps.protocols=TLSv1.2"

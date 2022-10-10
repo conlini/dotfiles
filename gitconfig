@@ -4,3 +4,18 @@
 	   path = ~/.custom-git/.gitconfig
 [core]
 	editor = emacs
+#[url "git@gecgithub01.walmart.com"]
+#	insteadOf = https://gecgithub01.walmart.com
+[diff]
+	tool = diffmerge
+[difftool "diffmerge"]
+	cmd = /usr/local/bin/diffmerge \"$LOCAL\" \"$REMOTE\"
+[merge]
+	tool = diffmerge
+[mergetool "diffmerge"]
+	trustExitCode = true
+	cmd = /usr/local/bin/diffmerge --merge --result=\"$MERGED\" \"$LOCAL\" \"$BASE\" \"$REMOTE\"
+[pull]
+	rebase = true
+[init]
+	defaultBranch = master

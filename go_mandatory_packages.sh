@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # install mandatory packages in go
-declare -a packages=("github.com/golang/dep/cmd/dep" "golang.org/x/tools/cmd/goimports" "github.com/alecthomas/gometalinter" "github.com/rogpeppe/godef")
+declare -a packages=("github.com/golang/dep/cmd/dep" "golang.org/x/tools/cmd/goimports" "github.com/alecthomas/gometalinter" "github.com/rogpeppe/godef" "github.com/nsf/gocode")
 
 for i in "${packages[@]}"
 do

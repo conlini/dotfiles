@@ -26,3 +26,6 @@ setopt hist_ignore_all_dups # ignore duplicates in history
 
 setopt autocd # auto cd.. type /Users instead of cd /Users
 
+#sledge:binary path
+export SLEDGE_BIN=/Users/a0b06xn/.sledge/bin
+export PATH="${PATH}:${SLEDGE_BIN}"
